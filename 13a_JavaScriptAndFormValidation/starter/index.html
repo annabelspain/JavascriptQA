@@ -9,18 +9,18 @@
 </head>
 
 <body>
-    <form novalidate>
+    <form name="form1" id="form1">
         <div class="formInput">
             <label for="name">Name: </label>
-            <input type="text" name="name">
+            <input type="text" name="name" required>
         </div>
         <div class="formInput">
             <label for="email">Email: </label>
-            <input type="email" name="email">
+            <input type="email" name="email" required>
         </div>
         <div class="formInput">
             <label for="gender">Gender: </label>
-            <select name="gender">
+            <select name="gender" required>
                 <option disabled selected value="">Please choose an option...</option>
                 <option value="f">Female</option>
                 <option value="m">Male</option>
@@ -28,7 +28,7 @@
         </div>
         <input type="submit" value="Submit">
     </form>
-    <script src="./main.js"></script>
+    <script src="./src/index.js"></script>
 </body>
 
 </html>
